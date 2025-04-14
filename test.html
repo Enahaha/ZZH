@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZZH的画展</title>
+  <style>
+    h1{
+      border: 2px dotted rgb(117,64,75);
+      border-radius: 5px;
+      padding: 5px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    #center {
+      text-align: center;
+    }
+    .text  {
+      color: rgb(120, 150, 100);
+      font-size: 18px; 
+      /* 设置字体粗细为加粗 */
+      font-weight: bold; 
+      /* 设置字体样式为斜体 */
+      font-style: italic;
+    }
+    /* img和vedio分组 */
+    .image,video {
+      display: block;
+      margin: 0 auto;
+      width: 600px;
+    }
+    /* 设置箭头的样式 */
+    .arrow {
+      font-size: 24px;
+      color: rgb(120, 150, 100);
+    }
+    .linkofcourse {
+      /* 去除超链接的下划线 */
+      text-decoration: none;
+      /* 改变超链接的颜色 */
+      color: rgb(200, 150, 100);
+      /* 鼠标悬停时改变颜色 */
+      &:hover {
+        color: rgb(255, 150, 100);
+      } 
+    }
+    /* 设置页面背景颜色 */
+    body {
+      background-color: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="center">Mc_Donald's</h1>
+  <img class="image" src="img/Mc_Donald's.jpg">
+  <p id="center" class="text">
+    这是“Mc_Donald's”，是我最喜欢的画之一。
+  </p>
+  <p id="center">
+    <span class="arrow">&rarr;</span>
+    <a class="linkofcourse" href="https://www.bilibili.com/video/BV1xv4y1J71F/?spm_id_from=333.1387.upload.video_card.click" target="_blank">
+      想看教程点击这里！
+    </a>
+    <span class="arrow">&larr;</span>
+  </p>
+  <p id="center">
+    <span class="arrow">&darr;</span>
+    以下是我的绘画过程
+    <span class="arrow">&darr;</span>
+  </p>
+  <!-- 引入一个视频，vedio/Mc_Donald's.mp4 -->
+  <video id="center" controls>
+    <source src="vedio/Mc_Donald's.mp4" type="video/mp4">
+    你的浏览器不支持视频标签。
+  </video>
+</body>
+
+</html>
